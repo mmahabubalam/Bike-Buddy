@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:padding="3dp"
+    >
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="78dp"
+       android:padding="10dp"
+       android:layout_gravity="center"
+       >
+
+       <LinearLayout
+           android:id="@+id/grid_item"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:layout_gravity="center"
+           android:orientation="vertical">
+
+           <ImageView
+               android:id="@+id/Cover_image"
+               android:layout_width="104dp"
+               android:layout_height="44dp"
+               android:layout_gravity="center"
+               android:scaleType="centerCrop"
+               android:src="@drawable/benelli" />
+
+           <TextView
+               android:id="@+id/grid_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               />
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+</LinearLayout>

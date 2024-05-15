@@ -16,6 +16,9 @@
         android:theme="@style/Theme.BikeBuddy"
         tools:targetApi="31">
         <activity
+            android:name=".Yamaha"
+            android:exported="false" />
+        <activity
             android:name=".All_Category"
             android:exported="false" />
         <activity

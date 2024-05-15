@@ -35,9 +35,9 @@ public class MainActivity extends AppCompatActivity {
     ArrayList < HashMap <String,String> > arrayList = new ArrayList<>();
     ArrayList < HashMap <String,String> > arrayList1 = new ArrayList<>();
     HashMap <String,String> hashMap = new HashMap<>();
-    HashMap <String,String> hashMap1 = new HashMap<>();
 
-    public int CatCover[] = {R.drawable.yamaha,R.drawable.honda,R.drawable.suzukii,R.drawable.tvs,R.drawable.gpx,R.drawable.more};
+
+    public int CatCover[] = {R.drawable.yamaha,R.drawable.honda,R.drawable.suzukii,R.drawable.tvs,R.drawable.benili,R.drawable.more};
     public int BrCover[] = {R.drawable.sprots,R.drawable.nakedsp,R.drawable.cafe_racer,R.drawable.cruizer,R.drawable.advanture,R.drawable.more};
 
     @Override
@@ -48,12 +48,15 @@ public class MainActivity extends AppCompatActivity {
         gridView = findViewById(R.id.GridView);
         gridView1 = findViewById(R.id.GridView1);
 
+
         CreateTable();
-        CreateTable1();
         MyAdapter adapter = new MyAdapter();
         gridView.setAdapter(adapter);
+
+        CreateTable1();
         MyAdapter1 adapter1 = new MyAdapter1();
         gridView1.setAdapter(adapter1);
+
 
 
 
@@ -104,11 +107,12 @@ public class MainActivity extends AppCompatActivity {
             return myview;
         }
     }
+
     public class MyAdapter1 extends BaseAdapter {
 
         @Override
         public int getCount() {
-            return arrayList.size();
+            return arrayList1.size();
         }
 
         @Override
@@ -131,17 +135,17 @@ public class MainActivity extends AppCompatActivity {
             LinearLayout grid_item = myview.findViewById(R.id.grid_item);
             TextView grid_text = myview.findViewById(R.id.grid_text);
 
-            HashMap <String,String> hashMap = arrayList.get(i);
+            HashMap <String,String> hashMap = arrayList1.get(i);
 
-            String cate = hashMap.get("cat");
+            String brand = hashMap.get("cat");
             Cover_image.setImageResource(BrCover[i]);
 
-            if(cate == "more")
+            if(brand == "more")
             {
                 grid_item.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        startActivity(new Intent(MainActivity.this, All_Brands.class));
+                        startActivity(new Intent(MainActivity.this, All_Category.class));
                     }
                 });
             }
@@ -149,6 +153,7 @@ public class MainActivity extends AppCompatActivity {
             return myview;
         }
     }
+
 
     private void CreateTable(){
         hashMap = new HashMap<>();
@@ -177,29 +182,30 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void CreateTable1(){
+
         hashMap = new HashMap<>();
         hashMap.put("cat","sports");
-        arrayList.add(hashMap);
+        arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
         hashMap.put("cat","nsports");
-        arrayList.add(hashMap);
+        arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
         hashMap.put("cat","cafe");
-        arrayList.add(hashMap);
+        arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
         hashMap.put("cat","cruizer");
-        arrayList.add(hashMap);
+        arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
         hashMap.put("cat","adv");
-        arrayList.add(hashMap);
+        arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
         hashMap.put("cat","more");
-        arrayList.add(hashMap);
+        arrayList1.add(hashMap);
 
     }
 
@@ -208,10 +214,10 @@ public class MainActivity extends AppCompatActivity {
         ImageSlider imageSlider;
         imageSlider =findViewById(R.id.image_slider);
         ArrayList<SlideModel> imageList = new ArrayList<>();
-        imageList.add(new SlideModel("https://imgd.aeplcdn.com/1280x720/n/cw/ec/145871/yamaha-r15-right-side-view1.jpeg", ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://www.gpxmalaysia.my/wp-content/uploads/2020/06/gpx-demon-gr200r-colour-matt-gray.jpg", ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://moto7.net/imgs/230116-HONDA-CBR250RR-JAPAN-4.jpg",ScaleTypes.CENTER_CROP));
-        imageList.add(new SlideModel("https://i.ndtvimg.com/i/2016-10/2017-ktm-rc-390-new-colours_827x510_61476368941.jpg",ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://www.ducatimelbourne.com.au/media/catalog/product/p/a/panigalev4r2023_1.jpg", ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://cdn2.yamaha-motor.eu/prod/product-assets/2024/YZF600R6RCOMP/2024-Yamaha-YZF600R6RCOMP-EU-Tech_Black-Studio-001-03.jpg", ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://images5.1000ps.net/images_bikekat/2024/4-Yamaha/329-R1/010-638352168675017932-yamaha-r1.jpg",ScaleTypes.CENTER_CROP));
+        imageList.add(new SlideModel("https://cache3.pakwheels.com/system/bike_model_pictures/2023/original/Bmw-new.jpg?1688727690",ScaleTypes.CENTER_CROP));
 
         imageSlider.setImageList(imageList);
         //===============================================

@@ -9,6 +9,7 @@
        android:layout_width="match_parent"
        android:layout_height="78dp"
        android:padding="10dp"
+
        android:layout_gravity="center"
        >
 
@@ -17,15 +18,18 @@
            android:layout_width="match_parent"
            android:layout_height="60dp"
            android:layout_gravity="center"
-           android:orientation="vertical">
+           android:orientation="vertical"
+           android:layout_marginBottom="7dp"
+           >
 
            <ImageView
                android:id="@+id/Cover_image"
                android:layout_width="104dp"
-               android:layout_height="44dp"
+               android:layout_height="50dp"
                android:layout_gravity="center"
                android:scaleType="centerCrop"
-               android:src="@drawable/benelli" />
+               android:src="@drawable/ktm"
+               />
 
            <TextView
                android:id="@+id/grid_text"

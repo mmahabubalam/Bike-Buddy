@@ -1,9 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".All_Brands">
+    tools:context=".All_Brands"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="  All Brands:   "
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bottom_curved"
+        android:fontFamily="serif"
+        android:layout_marginBottom="30dp"
+        />
+
+    <GridView
+        android:id="@+id/GridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:background="#E6E6E6"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="5dp"
+        />
+
+</LinearLayout>

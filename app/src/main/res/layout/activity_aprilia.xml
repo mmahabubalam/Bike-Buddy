@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Yamaha"
+    tools:context=".Aprilia"
     android:orientation="vertical"
     android:layout_margin="5dp"
     >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="78dp"
@@ -18,12 +17,11 @@
         >
 
         <TextView
-            android:layout_width="62dp"
+            android:layout_width="48dp"
             android:layout_height="match_parent"
             android:layout_weight="7"
             android:gravity="start"
-            android:text="Yamaha is one of the world wide famous Motorcycle Brand.
-Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. The sole Distributor"
+            android:text="Aprilia is an Italian motorcycle manufacturer. Founded 1945 by Alberto Beggio.  Headquarter located in  Noale, Italy. Aprilia started their journey by"
             android:textSize="16dp" />
 
         <ImageView
@@ -31,7 +29,7 @@ Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. Th
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:layout_marginRight="3dp"
-            android:src="@drawable/yamaha" />
+            android:src="@drawable/aprilia" />
 
     </LinearLayout>
 
@@ -39,8 +37,7 @@ Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. Th
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="of Yamaha in Bangladesh 'ACI Motors LTD' since 2017.
-FZs and R15 series bikes are most popular bikes."
+        android:text="manufacturing of bicycles, later they started manufacturing scooters and Motor Bikes. "
         android:textSize="16dp"
         android:layout_marginLeft="10dp"
         />
@@ -52,12 +49,10 @@ FZs and R15 series bikes are most popular bikes."
         android:layout_height="40dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/bottom_curved"
-        android:text=" Available Yamaha Bikes in Bangladesh:  "
+        android:text=" Available Aprilia Bikes in Bangladesh:   "
         android:textSize="20dp"
         android:textColor="#000000"
         android:textStyle="bold" />
-
-
     <ProgressBar
         android:id="@+id/progressbar"
         android:layout_width="match_parent"

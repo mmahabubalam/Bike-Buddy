@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Yamaha"
+    tools:context=".Benelli"
     android:orientation="vertical"
     android:layout_margin="5dp"
     >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="78dp"
@@ -22,8 +21,7 @@
             android:layout_height="match_parent"
             android:layout_weight="7"
             android:gravity="start"
-            android:text="Yamaha is one of the world wide famous Motorcycle Brand.
-Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. The sole Distributor"
+            android:text="Benelli is an Italian motorcycle brand founded in 1911 by Teresa Benelli. With its headquarters in Pesaro, Italy, Benelli is celebrated for its long history of "
             android:textSize="16dp" />
 
         <ImageView
@@ -31,7 +29,7 @@ Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. Th
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:layout_marginRight="3dp"
-            android:src="@drawable/yamaha" />
+            android:src="@drawable/benili" />
 
     </LinearLayout>
 
@@ -39,8 +37,7 @@ Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. Th
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="of Yamaha in Bangladesh 'ACI Motors LTD' since 2017.
-FZs and R15 series bikes are most popular bikes."
+        android:text="producing high-performance motorcycles that combine Italian craftsmanship with modern technology."
         android:textSize="16dp"
         android:layout_marginLeft="10dp"
         />
@@ -49,10 +46,10 @@ FZs and R15 series bikes are most popular bikes."
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="38dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/bottom_curved"
-        android:text=" Available Yamaha Bikes in Bangladesh:  "
+        android:text="  Available Benelli  Bikes in Bangladesh:   "
         android:textSize="20dp"
         android:textColor="#000000"
         android:textStyle="bold" />

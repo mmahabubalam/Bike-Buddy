@@ -1,8 +1,6 @@
 package com.mahabub.bikebuddy;
 
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,19 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -35,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList < HashMap <String,String> > arrayList = new ArrayList<>();
     ArrayList < HashMap <String,String> > arrayList1 = new ArrayList<>();
     HashMap <String,String> hashMap = new HashMap<>();
+    ImageView nearby_service, nearby_fuel;
 
 
     public int CatCover[] = {R.drawable.yamaha,R.drawable.honda,R.drawable.suzukii,R.drawable.tvs,R.drawable.benili,R.drawable.more};
@@ -47,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
         gridView = findViewById(R.id.GridView);
         gridView1 = findViewById(R.id.GridView1);
+        nearby_service = findViewById(R.id.nearby_service);
+        nearby_fuel = findViewById(R.id.nearby_fuel);
 
 
         CreateTable();
@@ -57,6 +53,19 @@ public class MainActivity extends AppCompatActivity {
         MyAdapter1 adapter1 = new MyAdapter1();
         gridView1.setAdapter(adapter1);
 
+        nearby_service.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Nearby_Service.class));
+            }
+        });
+
+        nearby_fuel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Nearby_Fuel.class));
+            }
+        });
 
 
 
@@ -103,6 +112,52 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
+            if(brand == "yamaha")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Yamaha.class));
+                    }
+                });
+            }
+            if(brand == "honda")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Honda.class));
+                    }
+                });
+            }
+            if(brand == "suzuki")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Suzuki.class));
+                    }
+                });
+            }
+            if(brand == "tvs")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, TVS.class));
+                    }
+                });
+            }
+            if(brand == "benelli")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Benelli.class));
+                    }
+                });
+            }
+
 
             return myview;
         }
@@ -137,15 +192,63 @@ public class MainActivity extends AppCompatActivity {
 
             HashMap <String,String> hashMap = arrayList1.get(i);
 
-            String brand = hashMap.get("cat");
+            String cat = hashMap.get("cat");
             Cover_image.setImageResource(BrCover[i]);
 
-            if(brand == "more")
+            if(cat == "more")
             {
                 grid_item.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         startActivity(new Intent(MainActivity.this, All_Category.class));
+                    }
+                });
+            }
+
+            if(cat == "sports")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Sports.class));
+                    }
+                });
+            }
+
+            if(cat == "naked")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Naked_Sports.class));
+                    }
+                });
+            }
+
+            if(cat == "cafe")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Cafe_Racer.class));
+                    }
+                });
+            }
+            if(cat == "Cruiser")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, Cruiser.class));
+                    }
+                });
+            }
+            if(cat == "adv")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(MainActivity.this, ADV.class));
                     }
                 });
             }
@@ -173,7 +276,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("brand","gpx");
+        hashMap.put("brand","benelli");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -188,7 +291,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("cat","nsports");
+        hashMap.put("cat","naked");
         arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -196,7 +299,7 @@ public class MainActivity extends AppCompatActivity {
         arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("cat","cruizer");
+        hashMap.put("cat","Cruiser");
         arrayList1.add(hashMap);
 
         hashMap = new HashMap<>();

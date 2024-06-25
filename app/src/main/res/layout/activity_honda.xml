@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Yamaha"
+    tools:context=".Honda"
     android:orientation="vertical"
     android:layout_margin="5dp"
     >
@@ -22,8 +22,8 @@
             android:layout_height="match_parent"
             android:layout_weight="7"
             android:gravity="start"
-            android:text="Yamaha is one of the world wide famous Motorcycle Brand.
-Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. The sole Distributor"
+            android:text="Honda is one of the world wide famous Motorcycle Brand.
+Honda Motorcycle Co.\nLtd. is a Japanese Multinational conglomerate company Motorcycle"
             android:textSize="16dp" />
 
         <ImageView
@@ -31,7 +31,7 @@ Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. Th
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:layout_marginRight="3dp"
-            android:src="@drawable/yamaha" />
+            android:src="@drawable/honda" />
 
     </LinearLayout>
 
@@ -39,8 +39,8 @@ Yamaha Motor Co.Lts\nis a Japanese Motorcycle Brand,was\nestablished in 1955. Th
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="of Yamaha in Bangladesh 'ACI Motors LTD' since 2017.
-FZs and R15 series bikes are most popular bikes."
+        android:text="Brand,was established on September 24, 1948. The sole Distributor of Honda in Bangladesh 'Bangladesh Honda Private Limited' since December 04, 2012.
+CBR series bikes are most popular bikes.Honda is also knows for automobile, power equipment, marine, aviation, and robotics."
         android:textSize="16dp"
         android:layout_marginLeft="10dp"
         />
@@ -49,10 +49,10 @@ FZs and R15 series bikes are most popular bikes."
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="38dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/bottom_curved"
-        android:text=" Available Yamaha Bikes in Bangladesh:  "
+        android:text="  Available Honda  Bikes in Bangladesh:   "
         android:textSize="20dp"
         android:textColor="#000000"
         android:textStyle="bold" />

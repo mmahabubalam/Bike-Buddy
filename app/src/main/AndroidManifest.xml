@@ -16,6 +16,93 @@
         android:theme="@style/Theme.BikeBuddy"
         tools:targetApi="31">
         <activity
+            android:name=".Nearby_Fuel"
+            android:exported="false" />
+        <activity
+            android:name=".Nearby_Service"
+            android:exported="false" />
+        <activity
+            android:name=".Taro"
+            android:exported="false" />
+        <activity
+            android:name=".Lifan"
+            android:exported="false" />
+        <activity
+            android:name=".Hpower"
+            android:exported="false" />
+        <activity
+            android:name=".Runner"
+            android:exported="false" />
+        <activity
+            android:name=".FKM"
+            android:exported="false" />
+        <activity
+            android:name=".Zontes"
+            android:exported="false" />
+        <activity
+            android:name=".Roadmaster"
+            android:exported="false" />
+        <activity
+            android:name=".KTM"
+            android:exported="false" />
+        <activity
+            android:name=".Aprilia"
+            android:exported="false" />
+        <activity
+            android:name=".Gpx"
+            android:exported="false" />
+        <activity
+            android:name=".Bajaj"
+            android:exported="false" />
+        <activity
+            android:name=".Hero"
+            android:exported="false" />
+        <activity
+            android:name=".Kawasaki"
+            android:exported="false" />
+        <activity
+            android:name=".Off_Road"
+            android:exported="false" />
+        <activity
+            android:name=".Electric"
+            android:exported="false" />
+        <activity
+            android:name=".Scooter"
+            android:exported="false" />
+        <activity
+            android:name=".Commuter"
+            android:exported="false" />
+        <activity
+            android:name=".ADV"
+            android:exported="false" />
+        <activity
+            android:name=".Cruiser"
+            android:exported="false" />
+        <activity
+            android:name=".Benelli"
+            android:exported="false" />
+        <activity
+            android:name=".TVS"
+            android:exported="false" />
+        <activity
+            android:name=".Cafe_Racer"
+            android:exported="false" />
+        <activity
+            android:name=".Naked_Sports"
+            android:exported="false" />
+        <activity
+            android:name=".Suzuki"
+            android:exported="false" />
+        <activity
+            android:name=".Details"
+            android:exported="false" />
+        <activity
+            android:name=".Sports"
+            android:exported="false" />
+        <activity
+            android:name=".Honda"
+            android:exported="false" />
+        <activity
             android:name=".Yamaha"
             android:exported="false" />
         <activity

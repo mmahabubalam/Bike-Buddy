@@ -25,7 +25,7 @@ public class All_Brands extends AppCompatActivity {
 
     public int brandcover[] = {R.drawable.yamaha,R.drawable.honda,R.drawable.suzuki,R.drawable.kawasaki,R.drawable.hero,R.drawable.tvs,
             R.drawable.bajaj, R.drawable.gpx, R.drawable.aprilia,R.drawable.ktm, R.drawable.benili, R.drawable.roadmaster,R.drawable.zontes, R.drawable.fkm, R.drawable.runner,
-            R.drawable.hpower, R.drawable.lifan, R.drawable.taro,};
+            R.drawable.hpower, R.drawable.lifan, R.drawable.taro};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +81,163 @@ public class All_Brands extends AppCompatActivity {
                     }
                 });
             }
+            if(brand == "honda")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Honda.class));
+                    }
+                });
+            }
+            if(brand == "suzuki")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Suzuki.class));
+                    }
+                });
+            }
+            //===================================
+            if(brand == "kawasaki")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Kawasaki.class));
+                    }
+                });
+            }
+            if(brand == "hero")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Hero.class));
+                    }
+                });
+            }
+            if(brand == "tvs")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, TVS.class));
+                    }
+                });
+            }
+            if(brand == "bajaj")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Bajaj.class));
+                    }
+                });
+            }
+            if(brand == "gpx")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Gpx.class));
+                    }
+                });
+            }
+            if(brand == "aprilia")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Aprilia.class));
+                    }
+                });
+            }
+            if(brand == "ktm")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, KTM.class));
+                    }
+                });
+            }
+            if(brand == "benelli")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Benelli.class));
+                    }
+                });
+            }
+
+
+            if(brand == "roadmaster")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Roadmaster.class));
+                    }
+                });
+            }
+            if(brand == "zontes")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Zontes.class));
+                    }
+                });
+            }
+            if(brand == "fkm")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, FKM.class));
+                    }
+                });
+            }
+            if(brand == "runner")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Runner.class));
+                    }
+                });
+            }
+            if(brand == "hpower")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Hpower.class));
+                    }
+                });
+            }
+            if(brand == "lifan")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Lifan.class));
+                    }
+                });
+            }
+            if(brand == "taro")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Brands.this, Taro.class));
+                    }
+                });
+            }
+
 
             return myview;
         }
@@ -99,19 +256,7 @@ public class All_Brands extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","tvs");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","benili");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","aprilia");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","gpx");
+        hashMap.put("name","kawasaki");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -119,7 +264,7 @@ public class All_Brands extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","ktm");
+        hashMap.put("name","tvs");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -127,7 +272,19 @@ public class All_Brands extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","lifan");
+        hashMap.put("name","gpx");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","aprilia");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","ktm");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","benelli");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
@@ -135,27 +292,28 @@ public class All_Brands extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","runner");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
-        hashMap.put("name","taro");
-        arrayList.add(hashMap);
-
-        hashMap = new HashMap<>();
         hashMap.put("name","zontes");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","kawasaki");
+        hashMap.put("name","fkm");
         arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","runner");
+        arrayList.add(hashMap);
+
 
         hashMap = new HashMap<>();
         hashMap.put("name","hpower");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("name","fkm");
+        hashMap.put("name","lifan");
+        arrayList.add(hashMap);
+
+        hashMap = new HashMap<>();
+        hashMap.put("name","taro");
         arrayList.add(hashMap);
 
     }

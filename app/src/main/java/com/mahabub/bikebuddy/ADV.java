@@ -33,7 +33,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Yamaha extends AppCompatActivity {
+public class ADV extends AppCompatActivity {
 
     ProgressBar progressBar;
     ListView listView;
@@ -43,11 +43,11 @@ public class Yamaha extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_yamaha);
+        setContentView(R.layout.activity_adv);
 
         progressBar = findViewById(R.id.progressbar);
         listView = findViewById(R.id.list_view);
-        String hit = "https://mmahabub.000webhostapp.com/project/yamaha.php";
+        String hit = "https://mmahabub.000webhostapp.com/project/adv.php";
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, hit, null, new Response.Listener<JSONArray>() {
             @Override
@@ -102,7 +102,7 @@ public class Yamaha extends AppCompatActivity {
                 progressBar.setVisibility(View.GONE);
             }
         });
-        RequestQueue requestQueue = Volley.newRequestQueue(Yamaha.this);
+        RequestQueue requestQueue = Volley.newRequestQueue(ADV.this);
         requestQueue.add(jsonArrayRequest);
 
 
@@ -177,7 +177,7 @@ public class Yamaha extends AppCompatActivity {
         String speed = hashMap.get("speed");
         String img = hashMap.get("img");
 
-        Intent intent = new Intent(Yamaha.this,Details.class);
+        Intent intent = new Intent(ADV.this,Details.class);
         intent.putExtra("id",id);
         intent.putExtra("name",name);
         intent.putExtra("brand", brand);

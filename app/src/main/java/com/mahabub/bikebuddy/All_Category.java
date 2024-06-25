@@ -3,6 +3,7 @@ package com.mahabub.bikebuddy;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,9 +67,93 @@ public class All_Category extends AppCompatActivity {
 
             HashMap <String,String> hashMap = arrayList.get(i);
 
-            String brand = hashMap.get("name");
+            String cate = hashMap.get("cat");
             Cover_image.setImageResource(category[i]);
 
+            if(cate == "sports")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Sports.class));
+                    }
+                });
+            }
+
+            if(cate == "naked")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Naked_Sports.class));
+                    }
+                });
+            }
+
+            if(cate == "cafe")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Cafe_Racer.class));
+                    }
+                });
+            }
+            if(cate == "adv")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, ADV.class));
+                    }
+                });
+            }
+            if(cate == "Cruiser")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Cruiser.class));
+                    }
+                });
+            }
+            if(cate == "offroad")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Off_Road.class));
+                    }
+                });
+            }
+            if(cate == "Commuter")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Commuter.class));
+                    }
+                });
+            }
+
+            if(cate == "Scooter")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Scooter.class));
+                    }
+                });
+            }
+            if(cate == "electric")
+            {
+                grid_item.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(All_Category.this, Electric.class));
+                    }
+                });
+            }
 
             return myview;
         }
@@ -91,19 +176,19 @@ public class All_Category extends AppCompatActivity {
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("cat","cruizer");
+        hashMap.put("cat","Cruiser");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("cat","dirt");
+        hashMap.put("cat","offroad");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("cat","standard");
+        hashMap.put("cat","Commuter");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();
-        hashMap.put("cat","scooty");
+        hashMap.put("cat","Scooter");
         arrayList.add(hashMap);
 
         hashMap = new HashMap<>();

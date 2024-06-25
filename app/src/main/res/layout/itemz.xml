@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="125dp"
+    android:layout_height="130dp"
     android:padding="5dp"
     >
 
@@ -20,7 +20,7 @@
             />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="5dp"
             >
@@ -34,44 +34,80 @@
                 android:textSize="17sp"
                 />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   >
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       >
 
-                    <TextView
-                        android:id="@+id/engine"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Engine: "
-                        android:textSize="17sp" />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Displacement: "
+                           android:textStyle="bold"
+                           android:textSize="17sp" />
 
-                    <TextView
-                        android:id="@+id/output"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Max Power: "
-                        android:textSize="17sp"
-                        android:maxLines="1"
-                        />
-                    <TextView
-                        android:id="@+id/price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Price: "
-                        android:textSize="17sp"
-                        />
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Max Output: "
+                           android:textStyle="bold"
+                           android:textSize="17sp"
+                           android:maxLines="1"
+                           />
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Price: "
+                           android:textStyle="bold"
+                           android:textSize="17sp"
+                           />
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       >
+
+                       <TextView
+                           android:id="@+id/engine"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Engine: "
+                           android:textSize="17sp" />
+
+                       <TextView
+                           android:id="@+id/output"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="Max Power: "
+                           android:textSize="17sp"
+                           android:maxLines="1"
+                           />
+                       <TextView
+                           android:id="@+id/price"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Price: "
+                           android:textSize="17sp"
+                           />
 
 
-                </LinearLayout>
+                   </LinearLayout>
+               </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="See Full Specification > "
-                android:gravity="center"
+                android:gravity="right"
                 android:textSize="17sp"
                 android:textStyle="bold|italic"
+                android:layout_marginTop="5dp"
                 />
         </LinearLayout>
     </LinearLayout>

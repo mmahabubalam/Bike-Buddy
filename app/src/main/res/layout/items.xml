@@ -28,7 +28,7 @@
                android:layout_height="50dp"
                android:layout_gravity="center"
                android:scaleType="centerCrop"
-               android:src="@drawable/ktm"
+               android:src="@drawable/bike"
                />
 
            <TextView

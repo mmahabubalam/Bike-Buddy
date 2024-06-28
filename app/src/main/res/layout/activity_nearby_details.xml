@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nearby_Details"
+    android:layout_margin="5dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Name: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Name Here"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/name_text"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/brand_text"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/name"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Area: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#E6E6E6"
+            />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:text="Band Here"
+            android:textSize="15sp"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/brand_text"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/type_text"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/area"
+            android:layout_marginTop="10dp"
+            android:text="Address: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Sports"
+            android:textSize="15sp"
+            android:layout_below="@id/area"
+            android:layout_toRightOf="@id/type_text"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/engine_text"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/address"
+            android:layout_marginTop="10dp"
+            android:text="Number: "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="155cc"
+            android:textSize="15sp"
+            android:layout_below="@id/address"
+            android:layout_toRightOf="@id/engine_text"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/output_text"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/number"
+            android:layout_marginTop="10dp"
+            android:text="Status "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="14.7"
+            android:textSize="15sp"
+            android:layout_below="@id/number"
+            android:layout_toRightOf="@id/output_text"
+            android:background="#E6E6E6"
+            android:gravity="center"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

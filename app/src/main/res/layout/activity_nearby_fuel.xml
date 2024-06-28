@@ -4,16 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Nearby_Fuel">
+    tools:context=".Nearby_Fuel"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Out Your Nearby Service Centers."
         android:textSize="20sp"
-        android:text="Sabaaaar Karo..."
+        android:layout_marginTop="20sp"
         android:layout_gravity="center"
-        android:gravity="center"
         />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="96dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/fuel"
+            android:layout_width="236dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:background="#E3E3E3"
+            android:hint="   Enter your area here..." />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/black"
+            android:shadowRadius="10"
+            />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
 </LinearLayout>
